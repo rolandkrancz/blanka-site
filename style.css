@@ -143,7 +143,7 @@ section.style2 {
     left: -450px;
     background-color: var(--color-dark);
     height: 100vh;
-    width: 50%;
+    width: 40%;
     position: fixed;
     max-width: 350px;
     top: 0;
@@ -174,8 +174,8 @@ section.style2 {
 
 .nav-list ul li a:hover {
     color: var(--color-light);
-    text-decoration: underline;
-    text-shadow: 0 0 10px var(--color-light), 0 0 20px var(--color-light), 0 0 30px var(--color-light);
+    /* text-decoration: underline; */
+    /* text-shadow: 0 0 10px var(--color-light), 0 0 20px var(--color-light), 0 0 30px var(--color-light); */
 }
 
                 /* Navbar on top: */
@@ -576,7 +576,7 @@ section.style2 {
 		position: relative;
 		overflow: hidden;
 		padding: 2em 0 1em 0;
-		background: #754E1A;
+		background: #472f0f;
 		color: #fff;
         width: 100%;
 	}
