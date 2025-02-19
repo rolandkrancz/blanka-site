@@ -220,14 +220,20 @@ section.style2 {
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
 }
 
-.about-container img {
-    width: 80%;
-    opacity: 0.9;
-    max-width: 100%;
-    height: auto;
-  
+.about-container .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.about-container .about-image img {
+    max-width: 80%;
+    border-radius: 50%;
 }
 
 /* Services */
