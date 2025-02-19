@@ -11,13 +11,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
-  
+
 body {
+    scroll-behavior: smooth !important;
     font-family: 'Poppins', 'Roboto', sans-serif;
     background-image: url("./assets/images/hero2.jpg");
     animation: 1.5s fadeIn;
@@ -171,6 +173,11 @@ section.style2 {
     color: var(--color-lightest);
 }
 
+.nav-list ul li a:hover {
+    color: var(--color-light);
+    text-decoration: underline;
+    text-shadow: 0 0 10px var(--color-light), 0 0 20px var(--color-light), 0 0 30px var(--color-light);
+}
 
                 /* Navbar on top: */
                 /* .nav-list {
