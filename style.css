@@ -19,8 +19,12 @@ html {
   
 body {
     font-family: 'Poppins', 'Roboto', sans-serif;
-    background-color: var(--color-dark);
+    background-image: url("./assets/images/hero2.jpg");
     animation: 1.5s fadeIn;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2 {
@@ -53,6 +57,9 @@ section {
     padding: 0;
     margin: 0;
     max-width: 1200px;
+    width: 80%;
+    opacity: 0.9;
+    margin: 1rem auto;
 }
 
 section h2 {
@@ -181,6 +188,11 @@ section.style2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-image h1 {
