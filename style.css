@@ -51,12 +51,24 @@ main {
     align-items: center;
 }
 
+/* Hide-show animation */
+
+.hidden {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.visible {
+    opacity: 1;
+}
+
 /* Sections */
 
 section {
     padding: 0;
     margin: 0;
     max-width: 1200px;
+    min-height: 80vh;
     width: 80%;
     opacity: 0.9;
     margin: 1rem auto;
@@ -247,12 +259,36 @@ section.style2 {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-
 }
 
 .about-container .about-image img {
     max-width: 80%;
     border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0.8;
+    box-shadow: 0 0 50px 15px var(--color-light);
+}
+
+.about-container .about-image img:hover {
+    opacity: 1;
+}
+
+.about-container .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-lightest);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.about-container hr {
+    top: 1.5em;
+    margin-bottom: 1em;
+    border-bottom-color: rgba(192, 192, 192, 0.35);
+    box-shadow: 0 0 25px 6px var(--color-light);
+    width: 80%;
 }
 
 /* Services */
