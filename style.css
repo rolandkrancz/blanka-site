@@ -69,10 +69,9 @@ main {
 
 section {
     padding: 0;
-    margin: 1rem;
-    max-width: 1200px;
+    /* margin: 1rem; */
     min-height: 80vh;
-    width: 85%;
+    width: 100%;
 }
 
 section h2 {
@@ -103,9 +102,9 @@ section.style3 {
 
 section.style4 {
     background-color: #faedcd;
-    opacity: 0.8;
+    opacity: 0.9;
     backdrop-filter: blur(15px);
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 
@@ -344,7 +343,7 @@ section:hover {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 3rem 2rem;
     border-radius: 10px;
@@ -674,13 +673,12 @@ section:hover {
   }
 
 
-
   /* FOG */
 
   .fog-container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 85%;
     overflow: hidden;
     z-index: 1;
   }
