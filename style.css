@@ -6,6 +6,7 @@
     --color-bg1: linear-gradient(160deg, var(--color-mid) 0%, var(--color-light) 100%);
     --color-bg2: linear-gradient(160deg, var(--color-mid) 0%, var(--color-dark) 100%);
     --color-card: rgba(234, 235, 226, 0.562);
+}
 
 * {
     padding: 0;
@@ -106,6 +107,13 @@ section.style4 {
     backdrop-filter: blur(15px);
     border-radius: 15px;
 }
+
+
+section:hover {
+    box-shadow: 0 0 10px 1px rgba(226, 221, 221, 0.25);
+    opacity: 0.95;
+}
+
 
 /* Amivel */
 
@@ -373,6 +381,10 @@ section.style4 {
     font-size: 1rem;
     color: var(--color-mid);
     margin-top: 1rem;
+}
+
+.service-card a {
+    text-decoration: none;
 }
 
 /* Form */
@@ -665,13 +677,6 @@ section.style4 {
 
   /* FOG */
 
-  .fog {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: #fff;
-  }
-  
   .fog-container {
     position: absolute;
     width: 100%;

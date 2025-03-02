@@ -1,0 +1,23 @@
+/* Yoga Section */
+
+.hero-image-yoga {
+    background-image: url("./assets/images/pexels-minan1398-1234035.jpg");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+
+.yoga-container {
+    color: black;
+    padding: 20px;
+}
+
+.yoga-container h2 {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
