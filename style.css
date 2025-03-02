@@ -245,6 +245,7 @@ section:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
 
     background-attachment: fixed;
@@ -256,7 +257,6 @@ section:hover {
 .hero-image h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    
 }
 
 .hero-text {
@@ -265,6 +265,20 @@ section:hover {
     margin-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
+    margin-top: auto;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+    color: white;
+    
+    margin-bottom: 3rem;
+    margin-top: auto;
+    max-width: 80%;
 }
 
 .scroll-down {
