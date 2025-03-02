@@ -6,6 +6,12 @@
     --color-bg1: linear-gradient(160deg, var(--color-mid) 0%, var(--color-light) 100%);
     --color-bg2: linear-gradient(160deg, var(--color-mid) 0%, var(--color-dark) 100%);
     --color-card: rgba(234, 235, 226, 0.562);
+
+    /* https://www.behance.net/gallery/132152253/vert-brand-guidelines */
+    --color-vert-1: #66734a;
+    --color-vert-2: #949D74;
+    --color-vert-3: #d1c4a4;
+    --color-vert-4: #f3ebd9;
 }
 
 * {
@@ -68,9 +74,8 @@ main {
 /* Sections */
 
 section {
-    padding: 0;
+    padding: 1rem 1rem 5rem 1rem;
     /* margin: 1rem; */
-    min-height: 80vh;
     width: 100%;
 }
 
@@ -94,27 +99,27 @@ section.style2 {
 }
 
 section.style3 {
-    background-color: #faedcda8;
     opacity: 0.95;
     backdrop-filter: blur(15px);
     border-radius: 15px;
 }
 
 section.style4 {
-    background-color: #faedcd;
-    opacity: 0.9;
-    backdrop-filter: blur(15px);
+    background-color: var(--color-vert-4);
+    /* border-radius: 15px; */
+}
+
+section.style5 {
+    background-color: var(--color-vert-2);
     /* border-radius: 15px; */
 }
 
 
-section:hover {
-    box-shadow: 0 0 10px 1px rgba(226, 221, 221, 0.25);
-    opacity: 0.95;
-}
-
-
 /* Amivel */
+
+#amivel {
+    margin-bottom: 15rem;
+}
 
 .amivel-container {
     display: flex;
@@ -356,12 +361,20 @@ section:hover {
 /* Services */
 
 .services-container {
+    color: black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 3rem 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+#services h2 {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .service-card {
@@ -743,4 +756,3 @@ section:hover {
   80% {opacity:1; transform:translateY(50px)}
   100% {opacity:0; transform:translateY(50px)}
   }
-  

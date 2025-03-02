@@ -1,5 +1,9 @@
 /* Yoga Section */
 
+#yoga {
+    min-height: 60vh;
+}
+
 .hero-image-yoga {
     background-image: url("./assets/images/pexels-minan1398-1234035.jpg");
     height: 40vh;
