@@ -1,0 +1,23 @@
+/* Art-therapy Section */
+
+.hero-image-art {
+    background-image: url("./assets/images/csoport.jpg");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+
+.art-container {
+    color: black;
+    padding: 20px;
+}
+
+.art-container h2 {
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
