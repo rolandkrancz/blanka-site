@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -148,24 +149,43 @@
     </div>
 </section>
 
-            <!-- Contact -->
-            <section id="contact" class="style5">
-                <h2>Kapcsolat</h2>
-                <div class="contact-container">
-                    <div class="responsive-container-block big-container">
-                      <div class="responsive-container-block container">
-                        <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9" id="i6df">
-                          <div class="form-wrapper">
-                            <input class="input input-element" name="Name" placeholder="Név">
-                            <input class="input input-element" name="Email" placeholder="Email">
-                            <textarea class="textinput input-element" placeholder="Üzenet" ></textarea>
-                            <button class="button">Küldés</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </section>
+
+<section id="contact" class="style5">
+    <h2>Kapcsolat</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Elérhetőségek:</h3>
+            <p>Email: blanka@example.com</p>
+            <p>Telefon: +36 30 123 4567</p>
+            <p>Cím: 1234 Budapest, Példa utca 1.</p>
+            <br />
+            <h3>Kövess a közösségi médiában:</h3>
+            <ul class="icons">
+                <li><a href="#" class="fa-brands fa-facebook" target="_blank"></a></li>
+                <li><a href="#" class="fa-brands fa-instagram" target="_blank"></a></a></li>
+                <li><a href="#" class="fa-brands fa-tiktok" target="_blank"></a></a></li>
+                <li><a href="#" class="fa-brands fa-linkedin" target="_blank"></a></a></li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h3>Írj nekem:</h3>
+            <form action="submit_form.php" method="post">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="8" required></textarea>
+                
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
         </main>
 
         <!-- Footer -->
