@@ -5,7 +5,6 @@
     --color-lightest: #ecf39eff;
     --color-bg1: linear-gradient(160deg, var(--color-mid) 0%, var(--color-light) 100%);
     --color-bg2: linear-gradient(160deg, var(--color-mid) 0%, var(--color-dark) 100%);
-    --color-card: rgba(234, 235, 226, 0.562);
 
     /* https://www.behance.net/gallery/132152253/vert-brand-guidelines */
     --color-vert-1: #66734a;
@@ -28,8 +27,8 @@ html {
 body {
     scroll-behavior: smooth !important;
     font-family: 'Poppins', 'Roboto', sans-serif;
-    background-image: url("./assets/images/hero2.jpg");
     animation: 1.5s fadeIn;
+    background-image: url("./assets/images/hero2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -269,8 +268,6 @@ section.style5 {
                 
                 .nav-list ul li a:hover {
                     color: var(--color-vert-4);
-                    /* text-decoration: underline; */
-                    /* text-shadow: 0 0 10px var(--color-light), 0 0 20px var(--color-light), 0 0 30px var(--color-light); */
                 } 
 
                 .nav-list ul li:nth-child(1) {
@@ -283,7 +280,6 @@ section.style5 {
 
 .hero-image {
     background-image: url("./assets/images/hero2.jpg");
-    
     background-size: cover;
     background-position: center;
     height: 85vh;
@@ -292,11 +288,8 @@ section.style5 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hero-image h1 {
@@ -421,7 +414,7 @@ section.style5 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 1.5rem;
-    background-color: var(--color-card);
+    background-color: var(--color-vert-4);
     border-radius: 10px;
     text-align: center;
 }

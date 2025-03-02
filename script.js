@@ -18,3 +18,11 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach(element => {
     observer.observe(element);
 });
+
+// Hero-image parallax effect
+window.addEventListener('scroll', function() {
+    const parallax = document.querySelector('.hero-image');
+    let scrollPosition = window.scrollY;
+
+    parallax.style.backgroundPositionY = scrollPosition * 0.9 + 'px';
+});
