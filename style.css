@@ -375,10 +375,10 @@ section.style5 {
     max-width: 70%;
     border-radius: 50%;
     transition: 0.3s;
-    opacity: 0.9;
     margin-top: 4rem;
     transform: translate(-2rem, -2rem);
     margin-bottom: auto;
+    /* box-shadow: 0 0 10px 1px var(--color-vert-3); */
 }
 
 .about-container .about-text {
@@ -463,6 +463,7 @@ section.style5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
+    position: relative;
 }
 
 .contact-form {
@@ -529,6 +530,32 @@ section.style5 {
 
 .contact-container .icons li a:hover {
     color: var(--color-vert-4);
+}
+
+/* .contact-container img {
+    max-width: 80%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    opacity: 0.9;
+} */
+
+/* #contact {
+    background-image: url("./assets/images/resilience-nobg.png");
+    background-size: cover;
+    background-position: center;
+} */
+
+.contact-container {
+    background-image: url("./assets/images/resilience-nobg.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.contact-container .contact-form {
+    background-color: var(--color-vert-3);
+    border-radius: 10px;
+    opacity: 0.7;
 }
 
     /* Footer */
