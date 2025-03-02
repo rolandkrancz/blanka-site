@@ -1,16 +1,11 @@
 :root {
-    --color-dark: #132a13ff;
-    --color-mid: rgba(49, 87, 44, 0.808);
-    --color-light: #fefae0;
-    --color-lightest: #ecf39eff;
-    --color-bg1: linear-gradient(160deg, var(--color-mid) 0%, var(--color-light) 100%);
-    --color-bg2: linear-gradient(160deg, var(--color-mid) 0%, var(--color-dark) 100%);
 
     /* https://www.behance.net/gallery/132152253/vert-brand-guidelines */
     --color-vert-1: #66734a;
     --color-vert-2: #949D74;
     --color-vert-3: #d1c4a4;
     --color-vert-4: #f3ebd9;
+    --shadow: 0 4px 8px var(--color-vert-1);
 }
 
 * {
@@ -35,22 +30,35 @@ body {
     background-size: cover;
 }
 
-h1, h2 {
-    color: white;
+h1 {
+    color: var(--color-vert-4);
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+h2 {
+    color: var(--color-vert-4);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    text-align: center;
+}
+
 h3 {
+    color: var(--color-vert-3);
+    font-family: "Poppins", serif;
     font-weight: 200;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 hr {
     top: 1.5em;
     margin-bottom: 1em;
-    border-bottom-color: rgba(192, 192, 192, 0.35);
-    box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);
+    border-bottom-color: var(--color-vert-4);
+    box-shadow: inset 0 1px 0 0 var(--color-vert-3);
 }
 
 main {
@@ -83,18 +91,6 @@ section {
     width: 100%;
 }
 
-section h2 {
-    padding: 1rem;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-}
-
-section.style1 {
-    background-image: var(--color-bg1);
-}
-
 section.style2 {
     border-radius: 20px;
     background-color: rgba(235, 238, 240, 0.178);
@@ -110,12 +106,18 @@ section.style3 {
 
 section.style4 {
     background-color: var(--color-vert-4);
-    /* border-radius: 15px; */
+}
+
+.style4 h2 {
+    color: var(--color-vert-1);
 }
 
 section.style5 {
     background-color: var(--color-vert-2);
-    /* border-radius: 15px; */
+}
+
+.style5 h2 {
+    color: var(--color-vert-4);
 }
 
 
@@ -130,11 +132,6 @@ section.style5 {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-}
-
-.amivel-container h2 {
-    color: black;
-    font-size: 2rem;
 }
 
 /* Hamburger-menu */
@@ -282,14 +279,15 @@ section.style5 {
     background-image: url("./assets/images/hero2.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     height: 85vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
 }
 
 .hero-image h1 {
@@ -298,8 +296,6 @@ section.style5 {
 }
 
 .hero-text {
-    color: var(--color-lightest);
-    font-size: 1.5rem;
     margin-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
@@ -312,36 +308,11 @@ section.style5 {
     margin-top: 1rem;
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
-    color: white;
-    
+    color: var(--color-vert-4);
+
     margin-bottom: 3rem;
     margin-top: auto;
     max-width: 80%;
-}
-
-.scroll-down {
-    bottom: 0;
-    left: 50%;
-    opacity: 1;
-    outline: 0;
-    position: absolute;
-    text-align: center;
-    z-index: 20;
-}
-
-.scroll-down:after {
-    color: white;
-    background-image: url("./assets/images/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    bottom: 4em;
-    content: '';
-    height: 3em;
-    left: 50%;
-    margin: 0 0 0 -1.5em;
-    position: absolute;
-    width: 3em;
-    animation: arrow 2s infinite;
 }
 
 /* About */
@@ -349,12 +320,6 @@ section.style5 {
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-}
-
-.about-container h2 {
-    color: black;
-    font-size: 2rem;
 }
 
 .about-container .about-image {
@@ -384,30 +349,26 @@ section.style5 {
     font-weight: 300;
 }
 
+.about-container .about-text p {
+    margin-bottom: 2rem;
+}
+
 .about-container hr {
     top: 1.5em;
     margin-bottom: 1em;
     border-bottom-color: rgba(192, 192, 192, 0.35);
     width: 80%;
+    margin-bottom: 1rem;
 }
 
 /* Services */
 
 .services-container {
-    color: black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 3rem 2rem;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-}
-
-#services h2 {
-    color: black;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem;
 }
 
 .service-card {
@@ -448,8 +409,9 @@ section.style5 {
 
 /* Contact */
 
-#contact h2 {
-    color: black;
+#contact h3 {
+    color: var(--color-vert-4);
+    text-align: left;
 }
 
 .contact-container {
@@ -465,7 +427,7 @@ section.style5 {
     width: 100%;
     max-width: 600px;
     padding: 2rem;
-    box-shadow: 0 4px 8px var(--color-vert-1);
+    box-shadow: var(--shadow);
 }
 
 .contact-form input,
