@@ -446,10 +446,22 @@ section.style5 {
 }
 
 .contact-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
+    margin: 2rem;
     position: relative;
+    width: 70%;
+}
+
+.contact-foreground {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    opacity: 0.7;
+    border-radius: 20px;
+    background-color: var(--color-vert-1);
+    backdrop-filter: blur(15px);
+    z-index: 2;
+
+    margin: 2rem;
 }
 
 .contact-form {
@@ -457,7 +469,7 @@ section.style5 {
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: var(--shadow);
 }
 
@@ -538,20 +550,16 @@ section.style5 {
 
 
 #contact {
-    background-image: url("./assets/images/resilience-nobg.png");
+    background-image: url("./assets/images/contact-bg.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
+    z-index: 1;
 }
-
 
  .contact-container .contact-form {
-    background-color: var(--color-vert-1);
-    border-radius: 10px;
-    opacity: 0.7;
+    background-color: var(--color-vert-2);
+    opacity: 0.9;
 }
-
-
 
 /* Articles */
 
