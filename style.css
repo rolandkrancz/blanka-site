@@ -86,7 +86,6 @@ a {
 /* Sections */
 
 section {
-    padding: 1rem 1rem 2rem 1rem;
     /* margin: 1rem; */
     width: 100%;
 }
@@ -320,6 +319,7 @@ section.style5 {
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
 }
 
 .about-container .about-image {
@@ -362,20 +362,34 @@ section.style5 {
 /* Studies */
 
 .studies-container {
+    position: relative;
+    overflow: hidden;
     padding: 1rem;
 }
 
 .studies-container hr {
     width: 70%;
-    margin: auto;
+    margin: 1rem;
 }
 
-.studies-container .studies-text p {
-    margin-bottom: 2rem;
+.studies-text {
+    padding: 1rem;
+}
+
+.studies-container .studies-text h2 {
+    position: relative;
+    left: -10%;
 }
 
 .studies-container ul li {
     margin-bottom: 0.5rem;
+}
+
+.studies-container img {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    max-width: 30%;
 }
 
 /* Services */
