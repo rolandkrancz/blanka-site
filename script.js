@@ -24,5 +24,5 @@ window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.hero-image');
     let scrollPosition = window.scrollY;
 
-    parallax.style.backgroundPositionY = scrollPosition * 0.9 + 'px';
+    parallax.style.backgroundPositionY = scrollPosition * 0.6 + 'px';
 });
