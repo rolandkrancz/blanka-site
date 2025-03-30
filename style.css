@@ -445,6 +445,10 @@ section.style5 {
     text-align: left;
 }
 
+#contact .right h3 {
+    margin-left: 2rem;
+}
+
 .contact-container {
     margin: 2rem;
     position: relative;
@@ -475,11 +479,6 @@ section.style5 {
     max-height: 60vh;
     margin-left: auto;
     z-index: 3;
-}
-
-.contact-form h3 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
 }
 
 .contact-form input,
