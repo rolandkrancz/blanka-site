@@ -115,22 +115,13 @@ section.style5 {
     background-color: var(--color-vert-2);
 }
 
+section.style6 {
+    background-color: var(--color-vert-1);
+}
+
+
 .style5 h2 {
     color: var(--color-vert-4);
-}
-
-
-/* Amivel */
-
-#amivel {
-    margin-bottom: 20rem;
-}
-
-.amivel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
 }
 
 /* Hamburger-menu */
@@ -368,7 +359,7 @@ section.style5 {
 }
 
 .studies-container hr {
-    width: 70%;
+    width: 60%;
     margin: 1rem;
 }
 
@@ -388,50 +379,53 @@ section.style5 {
 .studies-container img {
     position: absolute;
     bottom: -5%;
-    right: -5%;
-    max-width: 30%;
+    right: -3%;
+    max-width: 27%;
 }
 
 /* Services */
 
+#services h2 {
+    margin-top: 1rem;
+}
+
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 3rem 2rem;
     border-radius: 10px;
 }
 
 .service-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    text-align: center;
+    justify-self: center;
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 1.5rem;
-    background-color: var(--color-vert-4);
-    border-radius: 10px;
-    text-align: center;
+    /* background-color: var(--color-vert-2); */
+    /* border-radius: 50%; */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .service-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .service-card img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    max-width: 70%;
 }
 
 .service-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--color-dark);
+    color: var(--color-vert-4);
 }
 
 .service-card p {
-    font-size: 1rem;
-    color: var(--color-mid);
-    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 .service-card a {
@@ -611,7 +605,7 @@ section.style5 {
     /* Footer */
 
     footer {
-        background-color: var(--color-vert-1);
+        background-color: rgb(122, 74, 55);
         color: var(--color-vert-4);
         text-align: center;
         padding: 1rem;
