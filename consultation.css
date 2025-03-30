@@ -1,0 +1,16 @@
+/* Art-therapy Section */
+
+
+#consultation {
+    min-height: 60vh;
+}
+
+.hero-image-consultation {
+    background-image: url("./assets/images/contact.jpg");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
