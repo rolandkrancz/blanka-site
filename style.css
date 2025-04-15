@@ -391,18 +391,18 @@ section.style6 {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 3rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 4rem 3rem;
     border-radius: 10px;
 }
 
 .service-card {
-    max-width: 50%;
+    max-width: 70%;
     text-align: center;
     justify-self: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 1.5rem;
+    padding: 3rem;
     /* background-color: var(--color-vert-2); */
     /* border-radius: 50%; */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -415,7 +415,7 @@ section.style6 {
 }
 
 .service-card img {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .service-card h3 {
