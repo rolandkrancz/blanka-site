@@ -262,6 +262,36 @@ section.style6 {
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
+
+                .nav-list .dropdown {
+                    position: relative;
+                }
+
+                .nav-list .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    padding: 0;
+                    z-index: 1000;
+                    background-color: var(--color-vert-1);
+                    opacity: 0.9;
+                }
+
+                .nav-list .dropdown-menu li {
+                    font-size: 0.9rem !important;
+                    font-weight: 300 !important;
+                    padding: 1rem;
+                }
+                                
+                .nav-list .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+
+                .nav-list .dropdown-menu:hover {
+                    opacity: 1;
+                }
                 
 /* Hero */
 
