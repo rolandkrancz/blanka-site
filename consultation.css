@@ -1,24 +1,11 @@
 /* Art-therapy Section */
 
 
-#consultation-adult {
-    min-height: 60vh;
-}
-
-.hero-image-consultation {
-    background-image: url("./assets/images/contact.jpg");
-    height: 40vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    opacity: 0.9;
-}
-
 .consultation-container {
+    margin-top: 4rem;
     padding: 2rem;
-    max-width: 80%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
 }
 
 .consultation-container p {
@@ -28,4 +15,8 @@
 .consultation-container ul {
     margin-bottom: 1rem;
     margin-left: 2rem;
+}
+
+.consultation-container .consultation-img img {
+    max-width: 90%;
 }
