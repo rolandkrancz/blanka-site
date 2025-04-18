@@ -57,6 +57,6 @@ window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.hero-image');
     let scrollPosition = window.scrollY;
 
-    parallax.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+    parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
 });
 

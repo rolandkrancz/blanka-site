@@ -22,11 +22,17 @@ body {
     scroll-behavior: smooth !important;
     font-family: 'Lato', 'Roboto', sans-serif;
     animation: 1.5s fadeIn;
-    /* background-image: url('./assets/images/plant-6917093_1280.jpg');
+    background-image: url('./assets/images/hero2.jpg');
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-attachment: fixed;
+    margin: auto;
+}
+
+section {
+    max-width: 1920px;
+    margin: auto;
 }
 
 h1 {
@@ -266,6 +272,7 @@ section.style6 {
     background-attachment: scroll;
     background-repeat: no-repeat;
     height: 75vh;
+    width: 100vw;
 
     display: flex;
     justify-content: center;
@@ -566,6 +573,7 @@ button:hover {
         text-align: center;
         padding: 1rem;
         font-size: 1rem;
+        width: 100%;
     }
 
     footer .icons {
