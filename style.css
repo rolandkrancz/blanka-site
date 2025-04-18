@@ -22,11 +22,11 @@ body {
     scroll-behavior: smooth !important;
     font-family: 'Poppins', 'Roboto', sans-serif;
     animation: 1.5s fadeIn;
-    /* background-image: url("./assets/images/trees-2586387_1280.jpg"); 
-    background-attachment: fixed;
-    background-position: center;
+    /* background-image: url('./assets/images/plant-6917093_1280.jpg');
+    background-position: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;  */
+    background-attachment: fixed; */
 }
 
 h1 {
@@ -250,7 +250,7 @@ section.style6 {
                 .nav-list .dropdown-menu:hover {
                     opacity: 1;
                 }
-                
+
 /* Hero */
 
 .hero-image {
@@ -260,7 +260,7 @@ section.style6 {
     /* mount-fuji-2297961_1280+.jpg */
     /* sunlight-4520112_1280.jpg */
 
-    background-image: url("./assets/images/sunlight-4520112_1280.jpg");
+    background-image: url("./assets/images/hero2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -284,7 +284,6 @@ section.style6 {
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
     margin-top: auto;
-    display: none;
 }
 
 .quote {
@@ -293,6 +292,7 @@ section.style6 {
     margin-top: 1rem;
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
+    /* color: var(--color-lightest); */
     color: var(--color-lightest);
 
     margin-bottom: 3rem;
@@ -376,6 +376,7 @@ section.style6 {
     bottom: -5%;
     right: -3%;
     max-width: 27%;
+    display: none;
 }
 
 /* Services */
@@ -429,6 +430,9 @@ section.style6 {
 
 /* Contact */
 
+#contact {
+    padding-top: 5rem;
+}
 #contact h3 {
     color: var(--color-lightest);
     text-align: left;
@@ -489,7 +493,7 @@ section.style6 {
     outline: none;
 }
 
-.contact-form button {
+button {
     padding: 0.8rem 1.3rem;
     background-color: var(--color-lightest);
     color: black;
@@ -500,29 +504,16 @@ section.style6 {
     transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
+button:hover {
     background-color: var(--color-light);
 }
 
-.contact-container .icons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    list-style: none;
-}
-
-.contact-container .icons li {
-    margin-right: 1rem;
-    font-size: 2rem;
-}
-
-.contact-container .icons li a {
-    transition: all 0.3s;
-    opacity: 0.85;
-}
-
-.contact-container .icons li a:hover {
-    color: var(--color-lightest);
+.book-button {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    margin-top: auto;
 }
 
 /* v1: */
@@ -592,6 +583,52 @@ section.style6 {
         color: var(--color-med)
     }
 
+
+
+
+    /* Prices section */
+
+
+    .prices-container {
+        min-height: 25vh;
+        padding: 1rem;
+        margin-left: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prices-container .prices-text {
+        width: 80%;
+    }
+
+    .prices-container ul {
+        list-style: none;
+        opacity: 0.8;
+        margin-bottom: 2rem;
+    }
+
+    .prices-container ul li {
+        margin-bottom: 1rem;
+        padding: 2rem;
+        background-color: var(--color-light);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        font-size: 1.3rem;
+    }
+
+    .prices-container p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .prices-container .right {
+        margin-left: auto;
+    }
+
+
 /* Keyframe animations */
 
 @keyframes fadeIn {
@@ -610,7 +647,7 @@ section.style6 {
   .fog-container {
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 75%;
     overflow: hidden;
     z-index: 1;
   }
