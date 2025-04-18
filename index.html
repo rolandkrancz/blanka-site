@@ -16,52 +16,29 @@
     </head>
     <body class="hidden">
         <header>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-<!-- Navbar -->
-<nav class="nav-list">
-    <ul>
-        <li><a href="index.html#">Kezdőlap</a></li>
-        <li><a href="index.html#about">Rólam</a></li>
-        <li><a href="index.html#studies">Tanulmányaim</a></li>
-        <li class="dropdown">
-            <a href="index.html#services">Szolgáltatásaim</a>
-            <ul class="dropdown-menu">
-                <li><a href="consultation-adult.html">Felnőtt konzultáció</a></li>
-                <li><a href="consultation-teen.html">Serdülő konzultáció</a></li>
-                <li><a href="consultation-online.html">Online konzultáció</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html#contact">Kapcsolat</a></li>
-        <li><br /></li>
-     </ul>
-  </nav>
-
-<!-- Hero section -->
-               <div class="hero-image">
-                    <div class="fog-container">
-                        <div class="fog-img fog-img-first"></div>
-                    </div>
-
-                    <div class="hero-text">
-                    <h1>Pszichológia & Jóga</h1>
-                        <hr />
-                    <h3>Tatár Blanka</p>
-                    </div>
-
-                    <div class="quote">
-                        <p>"Ha megengedjük nekik, az emberek épp olyan csodálatosak, mint a naplemente. Amikor a naplementére nézek, nem próbálom irányítani azt. Hanem ámulattal nézem, ahogy kibontakozik."</p>
-                        <p>- Carl Rogers</p>
-                    </div>
-                </div>
-              </div>
+            <!-- Include Navbar -->
+            <div id="navbar-placeholder"></div>
         </header>
 
         <main>
+
+<!-- Hero section -->
+            <div class="hero-image">
+                <div class="fog-container">
+                    <div class="fog-img fog-img-first"></div>
+                </div>
+
+                <div class="hero-text">
+                    <h1>Pszichológia & Jóga</h1>
+                    <hr />
+                    <h3>Tatár Blanka</h3>
+                </div>
+
+                <div class="quote">
+                    <p>"Ha megengedjük nekik, az emberek épp olyan csodálatosak, mint a naplemente. Amikor a naplementére nézek, nem próbálom irányítani azt. Hanem ámulattal nézem, ahogy kibontakozik."</p>
+                    <p>- Carl Rogers</p>
+                </div>
+            </div>
 
 <!-- About section -->
             <section id="about" class="style4">
@@ -81,7 +58,7 @@
                 </div>
             </section>
 
-            <!-- Services section -->
+<!-- Services section -->
             <section id="services" class="style5">
                 <h2>Miben segíthetek?</h2>
                 <div class="services-container">
@@ -196,5 +173,13 @@
         </footer>
 
     <script src="./script.js"></script>
+    <script>
+        // Dynamically load the navbar
+        fetch('./navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
     </body>
 </html>

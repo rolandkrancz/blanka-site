@@ -1,9 +1,26 @@
-const hamburger = document.querySelector('.hamburger-menu');
-const navList = document.querySelector('.nav-list');
+document.addEventListener("DOMContentLoaded", () => {
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    if (navbarPlaceholder) {
+        fetch('./navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                navbarPlaceholder.innerHTML = data;
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navList.classList.toggle('active');
+                // Add event listeners after navbar is loaded
+                const hamburger = document.querySelector('.hamburger-menu');
+                const navList = document.querySelector('.nav-list');
+
+                if (hamburger && navList) {
+                    hamburger.addEventListener('click', () => {
+                        hamburger.classList.toggle('active');
+                        navList.classList.toggle('active');
+                    });
+                }
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    } else {
+        console.error('Navbar placeholder element not found.');
+    }
 });
 
 const observer = new IntersectionObserver((entries) => {
@@ -26,3 +43,4 @@ window.addEventListener('scroll', function() {
 
     parallax.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
 });
+
