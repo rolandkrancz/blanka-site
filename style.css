@@ -22,11 +22,11 @@ body {
     scroll-behavior: smooth !important;
     font-family: 'Poppins', 'Roboto', sans-serif;
     animation: 1.5s fadeIn;
-    /* background-image: url("./assets/images/hero2.jpg");
+    background-image: url("./assets/images/trees-2586387_1280.jpg"); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; 
 }
 
 h1 {
@@ -254,12 +254,18 @@ section.style6 {
 /* Hero */
 
 .hero-image {
-    background-image: url("./assets/images/hero2.jpg");
+
+    /* Esélyes: */
+    /* hero2.jpg */
+    /* mount-fuji-2297961_1280.jpg */
+    /* sunlight-4520112_1280.jpg */
+
+    background-image: url("./assets/images/mount-fuji-2297961_1280+.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 65vh;
 
     display: flex;
     justify-content: center;
@@ -278,6 +284,7 @@ section.style6 {
     background-color: rgba(0, 0, 0, 0.26);
     padding: 2rem;
     margin-top: auto;
+    display: none;
 }
 
 .quote {
@@ -603,7 +610,7 @@ section.style6 {
   .fog-container {
     position: absolute;
     width: 100%;
-    height: 75%;
+    height: 50%;
     overflow: hidden;
     z-index: 1;
   }
