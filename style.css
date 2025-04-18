@@ -260,7 +260,7 @@ section.style6 {
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 75vh;
 
     display: flex;
     justify-content: center;
@@ -604,7 +604,7 @@ section.style6 {
   .fog-container {
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 75%;
     overflow: hidden;
     z-index: 1;
   }
