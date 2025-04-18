@@ -23,6 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+
+        // Dynamically load the footer
+document.addEventListener("DOMContentLoaded", () => {
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => {
+                footerPlaceholder.innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    } else {
+        console.error('Footer placeholder element not found.');
+    }
+});
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
