@@ -657,6 +657,13 @@ section.style6 {
   }
 
 
+  @media (max-width: 1300px) {
+    .services-container .service-card {
+        max-width: 90%;
+    }
+}
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     
