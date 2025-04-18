@@ -20,7 +20,7 @@ html {
 
 body {
     scroll-behavior: smooth !important;
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     animation: 1.5s fadeIn;
     /* background-image: url('./assets/images/plant-6917093_1280.jpg');
     background-position: fixed;
@@ -38,7 +38,7 @@ h1 {
 
 h2 {
     color: var(--color-lightest);
-    font-family: "Poppins", serif;
+    font-family: "Fairplay Display", serif;
     font-weight: 400;
     font-size: 2rem;
     font-style: normal;
@@ -47,7 +47,7 @@ h2 {
 
 h3 {
     color: var(--color-light);
-    font-family: "Poppins", serif;
+    font-family: "Fairplay Display", serif;
     font-weight: 200;
     text-align: center;
     font-size: 1.5rem;
@@ -347,24 +347,36 @@ section.style6 {
 
 /* Studies */
 
+#studies {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 .studies-container {
     position: relative;
     overflow: hidden;
     padding: 1rem;
+    text-align: center;
 }
 
 .studies-container hr {
     width: 60%;
-    margin: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .studies-text {
     padding: 1rem;
 }
 
-.studies-container .studies-text h2 {
+/* .studies-container .studies-text h2 {
     position: relative;
     left: -10%;
+} */
+
+.studies-container ul {
+    margin-bottom: 2rem;
+    list-style: none;
 }
 
 .studies-container ul li {
@@ -375,8 +387,7 @@ section.style6 {
     position: absolute;
     bottom: -5%;
     right: -3%;
-    max-width: 27%;
-    display: none;
+    max-width: 23%;
 }
 
 /* Services */
@@ -583,15 +594,15 @@ button:hover {
         color: var(--color-med)
     }
 
-
-
-
     /* Prices section */
 
+    #prices {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
     .prices-container {
         min-height: 25vh;
-        padding: 1rem;
         margin-left: 1rem;
         text-align: center;
         display: flex;
@@ -621,7 +632,6 @@ button:hover {
 
     .prices-container p {
         font-size: 1.2rem;
-        font-weight: 300;
     }
 
     .prices-container .right {
