@@ -1,6 +1,3 @@
-/* Art-therapy Section */
-
-
 .consultation-container {
     margin-top: 4rem;
     padding: 2rem;
@@ -19,4 +16,25 @@
 
 .consultation-container .consultation-img img {
     max-width: 90%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+   
+}
+
+@media (max-width: 768px) {
+    .consultation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .consultation-container img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultation-container {
+        grid-template-columns: 1fr;
+    }
 }
