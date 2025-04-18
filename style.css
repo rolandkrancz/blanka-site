@@ -37,27 +37,30 @@ section {
 
 h1 {
     color: var(--color-lightest);
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Dancing Script", serif;
+    font-weight: 600;
+    font-style: bold;
 }
 
 h2 {
     color: var(--color-lightest);
-    font-family: "Fairplay Display", serif;
-    font-weight: 400;
-    font-size: 2rem;
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
+    font-size: 3rem;
     font-style: normal;
     text-align: center;
 }
 
 h3 {
     color: var(--color-light);
-    font-family: "Fairplay Display", serif;
-    font-weight: 200;
+    font-family: "Amatic SC", serif;
+    font-weight: 300;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: bold;
 }
+
 
 hr {
     top: 1.5em;
@@ -416,7 +419,7 @@ section.style6 {
     text-align: center;
     justify-self: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 3rem;
+    padding: 1rem;
     /* background-color: var(--color-med); */
     /* border-radius: 50%; */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -433,7 +436,7 @@ section.style6 {
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: var(--color-lightest);
 }
