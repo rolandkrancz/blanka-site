@@ -37,7 +37,7 @@ section {
 
 h1 {
     color: var(--color-lightest);
-    font-family: "Dancing Script", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 600;
     font-style: bold;
 }
@@ -390,7 +390,8 @@ section.style6 {
 }
 
 .studies-container ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 .studies-container img {
@@ -420,8 +421,6 @@ section.style6 {
     justify-self: center;
     transition: transform 0.3s, box-shadow 0.3s;
     padding: 1rem;
-    /* background-color: var(--color-med); */
-    /* border-radius: 50%; */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
