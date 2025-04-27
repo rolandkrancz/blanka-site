@@ -1,0 +1,41 @@
+.art-therapy-image {
+
+    background-image: url("./assets/images/hero2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 90vw;
+    z-index: 2;
+}
+
+.art-therapy-container h2 {
+    margin-bottom: 2rem;
+}
+
+.art-therapy-container h4 {
+    margin-top: 1.5rem;
+}
+
+.art-therapy-container {
+    margin-top: 4rem;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+.art-therapy-container p {
+    margin-bottom: 1rem;
+}
+
+.art-therapy-container ul {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
