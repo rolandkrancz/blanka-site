@@ -1,11 +1,11 @@
 .art-therapy-image {
 
-    background-image: url("./assets/images/hero2.jpg");
+    background-image: url("./assets/images/art-therapy.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 60vh;
     width: 90vw;
     z-index: 2;
 }
