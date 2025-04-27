@@ -22,11 +22,6 @@ body {
     scroll-behavior: smooth !important;
     font-family: 'Lato', 'Roboto', sans-serif;
     animation: 1.5s fadeIn;
-    background-image: url('./assets/images/hero2.jpg');
-    background-position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     margin: auto;
 }
 
@@ -262,13 +257,7 @@ section.style6 {
 /* Hero */
 
 .hero-image {
-
-    /* Esélyes: */
-    /* hero2.jpg */
-    /* mount-fuji-2297961_1280+.jpg */
-    /* sunlight-4520112_1280.jpg */
-
-    background-image: url("./assets/images/hero2.jpg");
+    background-image: url("./assets/images/hero.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
