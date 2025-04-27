@@ -44,20 +44,19 @@ h1 {
 
 h2 {
     color: var(--color-lightest);
-    font-family: "Amatic SC", serif;
-    font-weight: 700;
-    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 2rem;
     font-style: normal;
     text-align: center;
 }
 
 h3 {
     color: var(--color-light);
-    font-family: "Amatic SC", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 300;
     text-align: center;
     font-size: 2rem;
-    font-weight: 700;
     font-style: bold;
 }
 
