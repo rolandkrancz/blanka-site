@@ -29,6 +29,7 @@ section {
     max-width: 1920px;
     margin: auto;
     width: 100%;
+    overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -733,12 +734,23 @@ footer .copyright {
         grid-template-columns: 1fr;
     }
 
+    #contact {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
     .contact-container {
-        width: 90%;
+        max-width: 100%;
+        max-height: 100vh;
     }
 
     .contact-form {
-        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-foreground {
+        grid-template-columns: 1fr;
+        padding-bottom: 50rem;
     }
 }
 
