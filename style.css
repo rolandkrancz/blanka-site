@@ -502,14 +502,6 @@ button:hover {
     background-color: var(--color-light);
 }
 
-.book-button {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
-    margin-top: auto;
-}
-
 #contact {
     background-image: url("./assets/images/contact-bg.jpg");
     background-size: cover;
@@ -520,6 +512,26 @@ button:hover {
 .contact-container .contact-form {
     background-color: var(--color-med);
     opacity: 1;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.book-button {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Footer */
