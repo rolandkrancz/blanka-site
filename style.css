@@ -265,7 +265,7 @@ section.style6 {
 }
 
 .hero-image h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -277,7 +277,7 @@ section.style6 {
 }
 
 .quote {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: italic;
     margin-top: 1rem;
     background-color: rgba(0, 0, 0, 0.26);
@@ -722,6 +722,10 @@ footer .copyright {
 
     .about-container .about-image img {
         max-width: 50%;
+    }
+
+    .contact-container {
+        width: 90%;
     }
 }
 
