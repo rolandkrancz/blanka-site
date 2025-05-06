@@ -60,3 +60,18 @@ window.addEventListener('scroll', function() {
     parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
 });
 
+// EmailJs
+
+emailjs.init({ publicKey: "0tmHBXZDwRdO9WHY9" });
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs.sendForm('service_i6q2tlr', 'template_gmzd5u2', this)
+    .then(() => {
+        console.log('Email sent successfully!');
+        this.reset();
+    }, (error) => {
+        console.log('Email sending failed', error);
+        alert('Üzenetküldés sikertelen. Kérem próbálkozzon később.');
+    });  });
+  
