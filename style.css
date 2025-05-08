@@ -732,13 +732,34 @@ footer .copyright {
 }
 
 @media (max-width: 768px) {
-    .nav-list {
-        font-size: 0.9rem;
+    #contact {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
 
-    .services-container {
+    .contact-container {
+        width: 90%;
+        max-height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-foreground {
         grid-template-columns: 1fr;
-        justify-items: center; /* Ensure items are centered */
+        padding: 1rem;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0 auto;
     }
 
     #contact {
@@ -772,81 +793,56 @@ footer .copyright {
     }
 
     .prices-container ul li {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
         text-align: left;
         padding: 1rem;
     }
 
     .prices-container ul li p.right {
         margin-left: 0;
-        text-align: right; /* Align price to the right */
-    }
-}
-
-@media (max-width: 640px) {
-    .hamburger-menu {
-        opacity: 1;
-        z-index: 1000;
-    }
-
-    .nav-list {
-        left: -450px;
-        background-color: var(--color-dark);
-        height: 100vh;
-        width: 60%;
-        position: fixed;
-        max-width: 350px;
-        top: 0;
-        text-align: center;
-        font-size: 2rem;
-        transition: 0.3s ease;
-        z-index: 9;
-        opacity: 0.95;
-    }
-
-    .nav-list ul {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-    }
-
-    .nav-list ul li {
-        list-style: none;
-        margin: 0;
-    }
-
-    .nav-list ul li:nth-child(1) {
-        margin: 0;
-        font-size: 2.5rem;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .nav-list.active {
-        left: 0px;
-    }
-
-    .hero-text {
-        margin: 2rem;
-        padding: 1rem;
-    }
-
-    .quote {
-        font-size: 0.9rem;
+        text-align: right;
     }
 }
 
 @media (max-width: 480px) {
+    #contact {
+        padding-bottom: 5rem;
+    }
+
+    .contact-container {
+        width: 100%; /* Use full width */
+        max-height: 120vh; /* Allow more height */
+    }
+
+    .contact-foreground {
+        padding: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 0.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.8rem;
+    }
+
+    .book-button {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+
     .hero-image h1 {
         font-size: 2rem;
     }
 
     .services-container {
         grid-template-columns: 1fr;
-        justify-items: center; /* Ensure items are centered */
+        justify-items: center;
     }
 
     .services-container .service-card {
@@ -857,8 +853,17 @@ footer .copyright {
         max-width: 80%;
     }
 
+    #contact {
+        padding-bottom: 7rem;
+    }
+
     .contact-container {
-        width: 100%;
+        width: 90%;
+        max-height: 120vh;
+    }
+
+    .contact-foreground {
+        padding-bottom: 50rem;
     }
 
     .contact-form {
