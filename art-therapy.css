@@ -39,3 +39,19 @@
     margin-bottom: 1rem;
     margin-left: 2rem;
 }
+
+@media (max-width: 1024px) {
+    .art-therapy-container {
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .art-therapy-container {
+        padding: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .art-therapy-container {
+        padding: 0.5rem;
+    }
+}
