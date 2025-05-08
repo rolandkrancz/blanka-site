@@ -759,6 +759,28 @@ footer .copyright {
         grid-template-columns: 1fr;
         padding-bottom: 50rem;
     }
+
+    #prices {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .prices-container {
+        margin-left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .prices-container ul li {
+        flex-direction: column; /* Stack content vertically */
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .prices-container ul li p.right {
+        margin-left: 0;
+        text-align: right; /* Align price to the right */
+    }
 }
 
 @media (max-width: 640px) {
@@ -847,9 +869,27 @@ footer .copyright {
         margin: 2rem;
         padding: 1rem;
     }
+
+    .prices-container ul li {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .prices-container ul li p.right {
+        text-align: center;
+    }
+
+    .prices-container .prices-text p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 380px) {
+
+    .about-container {
+        padding: 0.5rem;
+    }
+
     .services-container {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -859,5 +899,9 @@ footer .copyright {
     .services-container .service-card {
         max-width: 90%;
         margin: 0;
+    }
+
+    .studies-container {
+        padding: 0.5rem;
     }
 }
