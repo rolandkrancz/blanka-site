@@ -18,6 +18,19 @@
     max-width: 90%;
 }
 
+button {
+    background-color: var(--color-light);
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: var(--color-lightest);
+
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
    
