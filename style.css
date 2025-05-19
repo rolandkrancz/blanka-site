@@ -538,10 +538,10 @@ button:hover {
 /* Footer */
 
 footer {
-    background-color: rgb(122, 74, 55);
+    background-color: #746446;
     color: var(--color-lightest);
     text-align: center;
-    padding: 1rem;
+    padding: 0.3rem;
     font-size: 1rem;
     width: 100%;
 }
@@ -568,7 +568,7 @@ footer .icons a:hover {
 }
 
 footer .copyright {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     color: var(--color-med);
 }
 
