@@ -3,8 +3,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
 :root {
-    --color-dark: #66734a;
-    --color-med: #949D74;
+    --color-dark: #5F6F52;
+    --color-med: #96a27f;
     --color-light: #d1c4a4;
     --color-lightest: #f3ebd9;
     --shadow: 0 4px 8px var(--color-dark);
