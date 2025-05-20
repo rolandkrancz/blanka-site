@@ -249,7 +249,7 @@ section.style6 {
 /* Hero */
 
 .hero-image {
-    background-image: url("./assets/images/hero.jpg");
+    background-image: url("./assets/images/hero.webp");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -504,7 +504,7 @@ button:hover {
 }
 
 #contact {
-    background-image: url("./assets/images/contact-bg.jpg");
+    background-image: url("./assets/images/contact-bg.webp");
     background-size: cover;
     background-position: center;
     z-index: 1;
