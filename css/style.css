@@ -519,7 +519,7 @@ button:hover {
 .contact-info {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     padding: 1rem;
 }
@@ -749,11 +749,17 @@ footer .copyright {
     }
 
     .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: center;
+        padding: 1rem;
     }
 
     .contact-info p {
         font-size: 1rem;
+        align-items: center;
     }
 
     .contact-form {
