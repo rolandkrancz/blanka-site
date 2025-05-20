@@ -249,7 +249,7 @@ section.style6 {
 /* Hero */
 
 .hero-image {
-    background-image: url("./assets/images/hero.webp");
+    background-image: url("../assets/images/hero.webp");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -504,7 +504,7 @@ button:hover {
 }
 
 #contact {
-    background-image: url("./assets/images/contact-bg.webp");
+    background-image: url("../assets/images/contact-bg.webp");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -646,7 +646,7 @@ footer .copyright {
 }
 
 .fog-img-first {
-    background: url("./assets/images/fog-1.png");
+    background: url("../assets/images/fog-1.png");
     background-repeat: repeat-x;
     background-size: contain;
     background-position: center;
