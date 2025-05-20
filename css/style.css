@@ -238,7 +238,8 @@ section.style6 {
     padding: 1rem;
 }
 
-.nav-list .dropdown:hover .dropdown-menu {
+.nav-list .dropdown:hover .dropdown-menu,
+.nav-list .dropdown.open .dropdown-menu {
     display: block;
 }
 

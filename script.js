@@ -16,6 +16,31 @@ document.addEventListener("DOMContentLoaded", () => {
                         navList.classList.toggle('active');
                     });
                 }
+
+                // Dropdown menu open on click
+                document.querySelectorAll('.nav-list .dropdown > a').forEach(function(trigger) {
+                    trigger.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const dropdown = this.parentElement;
+                        // Toggle 'open' class
+                        dropdown.classList.toggle('open');
+                        // Close other dropdowns
+                        document.querySelectorAll('.nav-list .dropdown').forEach(function(other) {
+                            if (other !== dropdown) {
+                                other.classList.remove('open');
+                            }
+                        });
+                    });
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', function(e) {
+                    document.querySelectorAll('.nav-list .dropdown').forEach(function(dropdown) {
+                        if (!dropdown.contains(e.target)) {
+                            dropdown.classList.remove('open');
+                        }
+                    });
+                });
             })
             .catch(error => console.error('Error loading navbar:', error));
     } else {
@@ -74,4 +99,4 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
         console.log('Email sending failed', error);
         alert('Üzenetküldés sikertelen. Kérem próbálkozzon később.');
     });  });
-  
+
