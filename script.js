@@ -91,12 +91,29 @@ emailjs.init({ publicKey: "0tmHBXZDwRdO9WHY9" });
 
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
-    emailjs.sendForm('service_i6q2tlr', 'template_gmzd5u2', this)
+
+    // Sanitize form fields using DOMPurify
+    const nameInput = this.querySelector('[name="name"]');
+    const emailInput = this.querySelector('[name="email"]');
+    const messageInput = this.querySelector('[name="message"]');
+
+    const sanitizedName = DOMPurify.sanitize(nameInput.value);
+    const sanitizedEmail = DOMPurify.sanitize(emailInput.value);
+    const sanitizedMessage = DOMPurify.sanitize(messageInput.value);
+
+    // Create sanitized FormData
+    const formData = new FormData();
+    formData.append('name', sanitizedName);
+    formData.append('email', sanitizedEmail);
+    formData.append('message', sanitizedMessage);
+
+    emailjs.sendForm('service_i6q2tlr', 'template_gmzd5u2', formData)
     .then(() => {
         console.log('Email sent successfully!');
         this.reset();
     }, (error) => {
         console.log('Email sending failed', error);
         alert('Üzenetküldés sikertelen. Kérem próbálkozzon később.');
-    });  });
+    });
+});
 

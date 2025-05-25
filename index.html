@@ -165,13 +165,13 @@
                                 <div class="contact-form">
                                     <form id="contact-form">
                                         <label for="name">Név:</label>
-                                        <input type="text" id="name" name="name" required>
+                                        <input type="text" id="name" name="name" maxlength="60" required>
             
                                         <label for="email">Email:</label>
-                                        <input type="email" id="email" name="email" required>
+                                        <input type="email" id="email" name="email" maxlength="254" required>
             
                                         <label for="message">Üzenet:</label>
-                                        <textarea id="message" name="message" rows="5" required></textarea>
+                                        <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
             
                                         <button type="submit">Küldés</button>
                                     </form>
@@ -185,6 +185,7 @@
         <!-- Footer -->
         <footer id="footer-placeholder"></footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js"></script>
     <script src="./script.js"></script>
     </body>
 </html>
