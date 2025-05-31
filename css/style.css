@@ -559,12 +559,12 @@ footer .icons li {
     font-size: 1.5rem;
 }
 
-footer .icons a {
+footer a {
     color: var(--color-lightest);
     transition: all 0.3s;
 }
 
-footer .icons a:hover {
+footer a:hover {
     color: var(--color-light);
 }
 
